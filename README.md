@@ -1,4 +1,4 @@
 # Texas-holdem-Probabilities
-Algorithm to compute the exact probabilities of Texas hold'em (and Omaha)
+Algorithm to compute the exact probabilities of Texas hold'em (and if adapted also Omaha)
 
 As I wasn't aware of it until yesterday, it doesn't make use of the symmetry of the cards when it comes to how the game evaluates them. It's then simply a combinatorial computation that ultimately outputs the probabilities of all the possible situations that can occur in the game, for PreFlop, Flop, Turn and River (with all the hand ranges). A nice aspect of the algorithm is that it uses bitmaps and binary operators to represent and handle combinations in a somewhat fast manner. The reason why I uploaded it is to find out whether with the proper modifications, by now taking advantage of isomorphisms, could be made useful in achieving an even faster time of computation. You are very welcome to contribute, if you find this algorithm of any use. Thank you for your attention ;)
