@@ -56,8 +56,6 @@ uint32_t * LexicographicalOrder_2Players_PreFlop_LProbabilities = NULL;
 
 uint32_t main(void)
 {
-	//Nested switch loops can be simplified, the idea being that maybe overall it results in faster code, even if algorithmically the if, the transistor as itself is the simplest alternative (here it might be faster, maybe not, but I'm already using it in the Parsers because it allows for much more readibility, I have to check if is it so in the main loop ==> this combined with using Cards instead of shift numbers and another idea, then parallelize)
-	
 	//Cards
 	fp = fopen("/home/<USER>/Poker/Probabilities/Cards.bin", "wb+");
 	for(i1 = 1; i1 != 4503599627370496; i1 <<= 1)//1 << 52 = 4503599627370496
